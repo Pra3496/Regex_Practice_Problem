@@ -11,7 +11,9 @@ namespace Regex_Assignment
             RegexPattern reg = new RegexPattern();
 
             reg.UCFirst();
-          
+            reg.LetterWithUnderscore();
+
+
 
             Console.ReadKey();
         }

@@ -26,6 +26,27 @@ namespace Regex_Assignment
 
         }
 
-      
+
+        public void LetterWithUnderscore()
+        {
+            string pattern = "^[a-z]{1,}[_]{1}[a-z]{1,}$";
+
+            Console.Write("\n\nEnter the String : ");
+            string Name = Console.ReadLine();
+
+            if (Regex.IsMatch(Name, pattern))
+            {
+                Console.WriteLine("Valid");
+            }
+            else
+            {
+                Console.WriteLine("Not Valid");
+            }
+
+            // Console.ReadKey();
+
+        }
+
+
     }
 }
