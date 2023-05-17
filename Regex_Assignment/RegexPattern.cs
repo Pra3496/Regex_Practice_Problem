@@ -48,5 +48,27 @@ namespace Regex_Assignment
         }
 
 
+
+        public void HtmlSyntaxMaching()
+        {
+            string pattern = @"(<\w+>)|(</\w+>)";
+
+            Console.Write("\n\nEnter the String : ");
+            string Name = Console.ReadLine();
+
+            string[] newPattern = Regex.Split(Name, pattern);
+
+            foreach (string sample in newPattern)
+            {
+                if (Regex.IsMatch(sample, pattern))
+                {
+                    Console.WriteLine(sample);
+                }
+            }
+
+            //Console.ReadKey();
+
+        }
+
     }
 }

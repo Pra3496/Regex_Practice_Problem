@@ -13,6 +13,9 @@ namespace Regex_Assignment
             reg.UCFirst();
             reg.LetterWithUnderscore();
 
+            reg.HtmlSyntaxMaching();
+          
+
 
 
             Console.ReadKey();
