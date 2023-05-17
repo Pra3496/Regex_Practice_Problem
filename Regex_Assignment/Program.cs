@@ -14,8 +14,10 @@ namespace Regex_Assignment
             reg.LetterWithUnderscore();
 
             reg.HtmlSyntaxMaching();
-          
 
+            reg.WordOccurance();
+
+            //reg.FileExtension();
 
 
             Console.ReadKey();

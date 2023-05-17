@@ -49,6 +49,8 @@ namespace Regex_Assignment
 
 
 
+
+
         public void HtmlSyntaxMaching()
         {
             string pattern = @"(<\w+>)|(</\w+>)";
@@ -67,6 +69,33 @@ namespace Regex_Assignment
             }
 
             //Console.ReadKey();
+
+        }
+
+
+        public void WordOccurance()
+        {
+            int iCnt = 0;
+            string str = "fos";
+            string pattern = $"({str})";
+
+            Console.Write("\n\nEnter the String : ");
+            string Name = Console.ReadLine();
+
+            string[] newPattern = Regex.Split(Name, pattern);
+
+            foreach (string sample in newPattern)
+            {
+                if (Regex.IsMatch(sample, pattern))
+                {
+                    iCnt++;
+                }
+            }
+
+
+
+            Console.WriteLine("There are {0} occurrences.", iCnt);
+
 
         }
 
