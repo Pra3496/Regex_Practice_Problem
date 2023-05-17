@@ -99,5 +99,33 @@ namespace Regex_Assignment
 
         }
 
+
+        public void FileExtension()
+        {
+            int iCnt = 0;
+
+            string pattern = @"(.pdf|.docx|.txt)";
+
+            Console.Write("\n\nEnter the String : ");
+            string Name = Console.ReadLine();
+
+            string[] newPattern = Regex.Split(Name, pattern);
+
+            foreach (string sample in newPattern)
+            {
+                if (Regex.IsMatch(sample, pattern))
+                {
+                    iCnt++;
+                    Console.WriteLine(sample);
+                }
+            }
+
+
+
+            Console.WriteLine("There are {0} occurrences.", iCnt);
+
+
+        }
+
     }
 }

@@ -17,7 +17,9 @@ namespace Regex_Assignment
 
             reg.WordOccurance();
 
-            //reg.FileExtension();
+            reg.FileExtension();
+
+
 
 
             Console.ReadKey();
